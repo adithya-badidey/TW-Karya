@@ -5,4 +5,4 @@ tags:
 title: $:/plugins/adithyab/karya/SidebarTab/over
 type: text/vnd.tiddlywiki
 
-<$macrocall $name="projecttimeline" subfilter="tag[project]tag[done]"/>
+<$macrocall $name="project_timeline" subfilter="tag[project]tag[done]"/>

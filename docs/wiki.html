@@ -183,6 +183,8 @@ Error message and password prompt
 
 <li>$:/tags/EditTemplate</li>
 
+<li>$:/tags/ViewTemplate</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
@@ -10181,7 +10183,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210314160827375" dependents="" description="A minimal project manager." modified="20210314160827375" name="Karya" plugin-type="plugin" title="$:/plugins/adithyab/karya" type="application/json" version="0.1.1" revision="0" bag="default">
+<div created="20210314160827375" dependents="" description="A minimal project manager." modified="20210314160827375" name="Karya" plugin-type="plugin" title="$:/plugins/adithyab/karya" type="application/json" version="0.1.2" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/config/EditTemplateFields/Visibility/tasks&quot;: {
@@ -10214,7 +10216,7 @@ Error message and password prompt
             &quot;modified&quot;: &quot;20210419152425720&quot;,
             &quot;tags&quot;: &quot;$:/tags/SideBar&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;$macrocall $name=\&quot;tabs\&quot; tabsList=\&quot;[all[tiddlers+shadows]prefix[$:/plugins/adithyab/karya/SidebarTab/]]\&quot; default=\&quot;$:/plugins/adithyab/karya/SidebarTab/current\&quot;/&gt;\n&quot;
+            &quot;text&quot;: &quot;&lt;$macrocall $name=\&quot;tabs\&quot; tabsList=\&quot;[all[tiddlers+shadows]prefix[$:/plugins/adithyab/karya/SidebarTab/]sort[]]\&quot; default=\&quot;$:/plugins/adithyab/karya/SidebarTab/current\&quot;/&gt;\n&quot;
         },
         &quot;$:/plugins/adithyab/karya/SidebarTab/current&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/karya/SidebarTab/current&quot;,
@@ -10232,7 +10234,7 @@ Error message and password prompt
             &quot;modified&quot;: &quot;20210419213340804&quot;,
             &quot;tags&quot;: &quot;&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;$macrocall $name=\&quot;projecttimeline\&quot; subfilter=\&quot;tag[project]tag[limbo]\&quot;/&gt;&quot;
+            &quot;text&quot;: &quot;&lt;$macrocall $name=\&quot;project_timeline\&quot; subfilter=\&quot;tag[project]tag[limbo]\&quot;/&gt;&quot;
         },
         &quot;$:/plugins/adithyab/karya/SidebarTab/over&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/karya/SidebarTab/over&quot;,
@@ -10241,7 +10243,7 @@ Error message and password prompt
             &quot;modified&quot;: &quot;20210419213410337&quot;,
             &quot;tags&quot;: &quot;&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;$macrocall $name=\&quot;projecttimeline\&quot; subfilter=\&quot;tag[project]tag[done]\&quot;/&gt;&quot;
+            &quot;text&quot;: &quot;&lt;$macrocall $name=\&quot;project_timeline\&quot; subfilter=\&quot;tag[project]tag[done]\&quot;/&gt;&quot;
         },
         &quot;$:/plugins/adithyab/karya/ViewTasks&quot;: {
             &quot;title&quot;: &quot;$:/plugins/adithyab/karya/ViewTasks&quot;,
@@ -11388,7 +11390,10 @@ Error message and password prompt
 <div list="Karya $:/plugins/adithyab/karya" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
-<div created="20210422213536204" list="$:/core/ui/EditTemplate/controls $:/core/ui/EditTemplate/title $:/core/ui/EditTemplate/tags $:/core/ui/EditTemplate/shadow $:/plugins/adithyab/karya/EditTasks $:/core/ui/ViewTemplate/classic $:/core/ui/EditTemplate/body $:/core/ui/EditTemplate/type $:/core/ui/EditTemplate/fields" modified="20210422213536289" title="$:/tags/EditTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210422213536204" list="$:/core/ui/EditTemplate/controls $:/core/ui/EditTemplate/title $:/core/ui/EditTemplate/tags $:/plugins/adithyab/karya/EditTasks $:/core/ui/EditTemplate/shadow $:/core/ui/ViewTemplate/classic $:/core/ui/EditTemplate/body $:/core/ui/EditTemplate/type $:/core/ui/EditTemplate/fields" modified="20210423195232698" title="$:/tags/EditTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20210423195027038" list="$:/core/ui/ViewTemplate/title $:/core/ui/ViewTemplate/unfold $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/core/ui/ViewTemplate/import $:/core/ui/ViewTemplate/plugin $:/plugins/adithyab/karya/ViewTasks $:/plugins/rmnvsl/krystal/references $:/plugins/rmnvsl/krystal/title" modified="20210423195034065" title="$:/tags/ViewTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23" revision="0" bag="default">
@@ -11537,12 +11542,14 @@ Error message and password prompt
 	border-radius: 1em;
 }</pre>
 </div>
-<div created="20210422224610952" modified="20210422224723104" tags="project" tasks="[x] A task that has been completed
+<div created="20210422224610952" modified="20210423195222444" tags="project" tasks="[x] A task that has been completed
 [?] A task in questionable status
 [?] An unactionable task
 [ ] Actionable task
 [ ] Task for the futura" title="Demo Project" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
+<pre>Any tiddler can be a project tiddler. This is the body text.
+
+You can rearrange the position of the Tasks editor and the Tasks ViewWidget by clicking on the &lt;&lt;tag $:/tags/ViewTemplate&gt;&gt; and &lt;&lt;tag $:/tags/EditTemplate&gt;&gt; respectively and reordering the [[$:/plugins/adithyab/karya]]'s tiddler to the right positiong. </pre>
 </div>
 <div created="20200728102956586" creator="Adithya_" description="A minimal Project Planner for TW" modified="20210423164011056" modifier="Adithya_" name="Home" published="20210314001527357" tags="$:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live" title="index" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;section class=&quot;section mt-6&quot;&gt;
@@ -11573,7 +11580,7 @@ Error message and password prompt
 {{$:/plugins/nico/shields/stylesheet}}
 &lt;/style&gt;</pre>
 </div>
-<div created="20210419150934402" modified="20210423174623847" tags="project" tasks="[x] Make karya an independent plugin
+<div created="20210419150934402" modified="20210423194812876" tags="project done" tasks="[x] Make karya an independent plugin
 [x] Write a brief intro and &quot;How to use&quot; section in [[Karya]]
 [x] Create github repo
 [x] Create gh-pages webpage using [[TiddlyJam|http://tiddlyjam.com/]]
@@ -11586,7 +11593,7 @@ Error message and password prompt
 &lt;a href=&quot;https://adithya-badidey.github.io/TW-Karya/wiki.html&quot;&gt;
 &lt;&lt;shield label:Demo status:v{{$:/plugins/adithyab/karya!!version}} colour:purple&gt;&gt;
 &lt;/a&gt;
-&lt;a href=&quot;https://github.com/adithya-badidey/karya&quot; target=&quot;_blank&quot;&gt;
+&lt;a href=&quot;https://github.com/adithya-badidey/TW-Karya&quot; target=&quot;_blank&quot;&gt;
 &lt;&lt;shield label:GitHub status:karya colour:yellow&gt;&gt;
 &lt;/a&gt;
 &lt;/div&gt;

@@ -1,0 +1,5 @@
+created: 20210423195027038
+list: $:/core/ui/ViewTemplate/title $:/core/ui/ViewTemplate/unfold $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/core/ui/ViewTemplate/import $:/core/ui/ViewTemplate/plugin $:/plugins/adithyab/karya/ViewTasks $:/plugins/rmnvsl/krystal/references $:/plugins/rmnvsl/krystal/title
+modified: 20210423195034065
+title: $:/tags/ViewTemplate
+type: text/vnd.tiddlywiki

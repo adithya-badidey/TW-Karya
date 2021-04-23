@@ -5,4 +5,4 @@ tags: $:/tags/SideBar
 title: Projects Manager
 type: text/vnd.tiddlywiki
 
-<$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/adithyab/karya/SidebarTab/]]" default="$:/plugins/adithyab/karya/SidebarTab/current"/>
+<$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/adithyab/karya/SidebarTab/]sort[]]" default="$:/plugins/adithyab/karya/SidebarTab/current"/>

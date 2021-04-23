@@ -1,11 +1,11 @@
 [
     {
         "created": "20210422224610952",
-        "text": "",
-        "tags": "project",
-        "title": "Demo Project",
-        "modified": "20210422224723104",
+        "text": "Any tiddler can be a project tiddler. This is the body text.\n\nYou can rearrange the position of the Tasks editor and the Tasks ViewWidget by clicking on the <<tag $:/tags/ViewTemplate>> and <<tag $:/tags/EditTemplate>> respectively and reordering the [[$:/plugins/adithyab/karya]]'s tiddler to the right positiong. ",
         "type": "text/vnd.tiddlywiki",
+        "title": "Demo Project",
+        "tags": "project",
+        "modified": "20210423195222444",
         "tasks": "[x] A task that has been completed\n[?] A task in questionable status\n[?] An unactionable task\n[ ] Actionable task\n[ ] Task for the futura"
     }
 ]
