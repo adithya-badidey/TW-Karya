@@ -36,10 +36,6 @@
             "text/plain"
         ],
         "tiddlyjam":[
-            "--rendertiddler",
-            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "wiki.html",
-            "text/plain",
             "--rendertiddlers",
             "[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]",
             "$:/plugins/adithyab/tiddlyjam/renderer/base",
