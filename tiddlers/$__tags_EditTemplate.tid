@@ -1,0 +1,5 @@
+created: 20210422213536204
+list: $:/core/ui/EditTemplate/controls $:/core/ui/EditTemplate/title $:/core/ui/EditTemplate/tags $:/core/ui/EditTemplate/shadow $:/plugins/adithyab/karya/EditTasks $:/core/ui/ViewTemplate/classic $:/core/ui/EditTemplate/body $:/core/ui/EditTemplate/type $:/core/ui/EditTemplate/fields
+modified: 20210422213536289
+title: $:/tags/EditTemplate
+type: text/vnd.tiddlywiki

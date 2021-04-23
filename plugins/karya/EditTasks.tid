@@ -1,0 +1,10 @@
+created: 20210318180454100
+modified: 20210419153009268
+tags: $:/tags/EditTemplate
+title: $:/plugins/adithyab/karya/EditTasks
+type: text/vnd.tiddlywiki
+
+<$list filter="""[all[current]tag[project]]""">
+<h3>Tasks</h3>
+<$edit tiddler=<<currentTiddler>> default="" field="tasks" tag="textarea" class="tc-editor-texteditor tc-edit-texteditor-tasks" placeholder="[x] Completed Tasks \n [ ] Open Tasks"/>
+</$list>

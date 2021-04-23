@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -rf ./docs/*
+
+tiddlywiki --build tiddlyjam
+
+mv ./output/* ./docs/
+
+mkdir ./docs/files
+
+cp ./files/* ./docs/files/

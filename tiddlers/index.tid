@@ -1,0 +1,38 @@
+created: 20200728102956586
+creator: Adithya_
+description: A minimal Project Planner for TW
+modified: 20210423024620568
+modifier: Adithya_
+name: Karya
+published: 20210314001527357
+tags: $:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live
+title: index
+type: text/vnd.tiddlywiki
+
+<section class="section mt-6">
+    <div class="container">
+        <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+            <h1 class="title" style="font-size: 400%;">{{$:/SiteTitle}}</h1>
+            <div class="subtitle">
+                {{$:/SiteSubtitle}}
+            </div>
+						<div class="content">
+		 <$wikify name="output" type="text/vnd.tiddlywiki" text={{Karya}} mode="block" output="html">
+    <<output>>
+  </$wikify>
+		</div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="container mt-6">
+            <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+                <$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[5]]"> {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}
+                </$list>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+{{$:/plugins/nico/shields/stylesheet}}
+</style>

@@ -1,0 +1,54 @@
+created: 20210419153253133
+modified: 20210419154952498
+tags: $:/tags/Stylesheet
+title: $:/plugins/adithyab/karya/css
+type: text/vnd.tiddlywiki
+
+.tc-edit-texteditor-tasks {
+    width: 100%;
+}
+
+.tc-edit-texteditor-tasks .CodeMirror {
+    height: 200px !important;
+}
+
+.projects-view-tasks pre{
+	background-color: transparent;
+    border: none;
+}
+
+.tc-projectview-details {
+    font-family: {{$:/themes/tiddlywiki/vanilla/settings/codefontfamily}};
+}
+
+
+/** Styling Project View **/
+.tc-projectview-details li {
+    line-height: 1em;
+}
+
+.tc-projectview-details {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.tc-project-list-item {
+    padding-left: 10px;
+}
+
+.tc-projectview-oldtask{
+    opacity: 60%;
+    font-size: 0.8em;
+}
+
+
+.tc-projectview-limbotask{
+    opacity: 80%;
+    font-size: 0.8em;
+}
+
+.tc-projectview-currenttask{
+    font-size: 0.8em;
+}

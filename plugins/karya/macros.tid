@@ -1,0 +1,23 @@
+created: 20201117033452428
+modified: 20210419174549305
+tags: $:/tags/Macro
+title: $:/plugins/adithyab/karya/macros
+type: text/vnd.tiddlywiki
+
+\define project_timeline(limit:"100",format:"DDth MMM YYYY",subfilter:"tag[project]",dateField:"modified")
+\whitespace trim
+<div class="tc-project-timeline">
+<$list filter="[!is[system]!has[draft.of]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
+<$view field="$dateField$" format="date" template="$format$"/>
+<$list filter="[sameday:$dateField${!!$dateField$}!is[system]!has[draft.of]$subfilter$!sort[$dateField$]]">
+<div class="tc-project-list-item">
+{{||$:/plugins/adithyab/karya/ProjectView}}
+</div>
+</$list>
+</$list>
+</div>
+\end
+
+\define project_link_with_tags(modifier)
+<$link><$view field="title"/></$link>&nbsp;<$list filter="[all[current]tags[]sort[title]] $modifier$" template="$:/core/ui/TagTemplate"/>
+\end

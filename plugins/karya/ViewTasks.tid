@@ -1,0 +1,12 @@
+created: 20210419150709022
+modified: 20210419154754417
+tags: $:/tags/ViewTemplate
+title: $:/plugins/adithyab/karya/ViewTasks
+type: text/vnd.tiddlywiki
+
+<div class="projects-view-tasks"}><$list filter="""[all[current]tag[project]]""">
+<hr/>
+<h3>Tasks</h3>
+<pre>{{!!tasks}}
+</pre>
+</$list></div>

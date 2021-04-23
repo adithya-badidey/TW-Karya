@@ -1,0 +1,8 @@
+caption: Projects
+created: 20201117022116667
+modified: 20210419152425720
+tags: $:/tags/SideBar
+title: Projects Manager
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/adithyab/karya/SidebarTab/]]" default="$:/plugins/adithyab/karya/SidebarTab/current"/>

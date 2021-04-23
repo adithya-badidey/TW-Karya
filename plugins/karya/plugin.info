@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/adithyab/karya",
+    "created": "20210314160827375",
+    "dependents": "",
+    "description": "A minimal project manager.",
+    "modified": "20210314160827375",
+    "name": "Karya",
+    "plugin-type": "plugin",
+    "version": "0.1.0",
+    "revision": "0",
+    "bag": "default"
+}

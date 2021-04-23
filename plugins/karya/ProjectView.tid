@@ -1,0 +1,18 @@
+created: 20201024132218743
+modified: 20210419185516580
+tags:
+title: $:/plugins/adithyab/karya/ProjectView
+type: text/vnd.tiddlywiki
+
+ <<project_link_with_tags "-[[project]] -[[private]] -[[limbo]] -[[done]]">><br/>
+<ul class="tc-projectview-details">
+<$list filter="[all[current]get[tasks]splitregexp[\n]regexp[^\[x]last[]]" variable="line">
+<li><div class="tc-projectview-oldtask"><<line>></div></li>
+</$list>
+<$list filter="[all[current]get[tasks]splitregexp[\n]regexp[^\[\?]first[]]" variable="line">
+<li><div class="tc-projectview-limbotask"><<line>></div></li>
+</$list>
+<$list filter="[all[current]get[tasks]splitregexp[\n]regexp[^\[\s]first[]]" variable="line">
+<li><div class="tc-projectview-currenttask"><<line>></div></li>
+</$list>
+</ul>

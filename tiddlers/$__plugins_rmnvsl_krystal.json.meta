@@ -1,0 +1,13 @@
+author: Roman Veselý
+core-version: >=5.0.8
+created: 20210422224017997
+dependents: 
+description: Horizontal Story River
+list: readme settings
+modified: 20210422224017997
+name: Krystal
+plugin-type: plugin
+source: https://github.com/crazko/krystal
+title: $:/plugins/rmnvsl/krystal
+type: application/json
+version: 0.4.0

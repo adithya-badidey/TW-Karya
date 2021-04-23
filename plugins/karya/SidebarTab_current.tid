@@ -1,0 +1,8 @@
+caption: Current  (<$count filter="[tag[project]!tag[done]!tag[limbo]]"/>)
+created: 20210419152107977
+modified: 20210419152554927
+tags: 
+title: $:/plugins/adithyab/karya/SidebarTab/current
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="project_timeline" subfilter="tag[project]!tag[done]!tag[limbo]"/>
