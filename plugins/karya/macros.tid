@@ -1,5 +1,5 @@
 created: 20201117033452428
-modified: 20210419174549305
+modified: 20210423031217301
 tags: $:/tags/Macro
 title: $:/plugins/adithyab/karya/macros
 type: text/vnd.tiddlywiki
@@ -20,4 +20,8 @@ type: text/vnd.tiddlywiki
 
 \define project_link_with_tags(modifier)
 <$link><$view field="title"/></$link>&nbsp;<$list filter="[all[current]tags[]sort[title]] $modifier$" template="$:/core/ui/TagTemplate"/>
+\end
+
+\define project_view(tiddler)
+{{$tiddler$||$:/plugins/adithyab/karya/ProjectView}}
 \end

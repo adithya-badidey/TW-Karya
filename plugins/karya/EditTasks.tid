@@ -6,5 +6,5 @@ type: text/vnd.tiddlywiki
 
 <$list filter="""[all[current]tag[project]]""">
 <h3>Tasks</h3>
-<$edit tiddler=<<currentTiddler>> default="" field="tasks" tag="textarea" class="tc-editor-texteditor tc-edit-texteditor-tasks" placeholder="[x] Completed Tasks \n [ ] Open Tasks"/>
+<$edit tiddler=<<currentTiddler>> default="" field="tasks" tag="textarea" class="tc-editor-texteditor tc-edit-texteditor-tasks" placeholder="[ ] Short task description"/>
 </$list>
